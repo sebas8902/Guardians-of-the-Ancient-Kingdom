@@ -178,24 +178,10 @@ pytest main.py -v
 ```
 
 **Resultado de la ejecución:**
-```text
-============================= test session starts ==============================
-platform linux -- Python 3.x, pytest-8.x
-collected 6 items
-
-main.py::test_creacion_personaje_valido PASSED                            [ 16%]
-main.py::test_rechazo_valores_incorrectos PASSED                         [ 33%]
-main.py::test_calculo_danio_clases PASSED                                [ 50%]
-main.py::test_vida_no_negativa PASSED                                    [ 66%]
-main.py::test_personaje_derrotado_no_puede_atacar PASSED                [ 83%]
-main.py::test_combate_resultado_ganador PASSED                           [100%]
-
-============================== 6 passed in 0.12s ===============================
-```
 
 
 
-![Resultado de Pytest](Pruebas/Screenshot_20261024-165251_Brave (1).png)
+![Resultado de Pytest](Pruebas/pytest_resultado.png)
 
 
 
