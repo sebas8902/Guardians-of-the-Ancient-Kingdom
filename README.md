@@ -11,6 +11,22 @@
 
 El proyecto resuelve la necesidad de automatizar los combates, controlando de forma segura las reglas de ataque de cada personaje, el cálculo de daño según su habilidad especial, las validaciones de vida y el flujo de turnos hasta determinar un vencedor o un empate.
 
+## Esquema del proyecto
+
+A continuación se muestra el esquema completo de archivos y directorios que componen el proyecto:
+
+```text
+Guardians-of-the-Ancient-Kingdom/
+│
+├── personajes.py        # Módulo con la clase abstracta Personaje, subclases y lógica de Combate
+├── main.py              # Script principal con pruebas manuales, simulación y suite Pytest
+└── README.md            # Documentación general y respuestas teóricas
+```
+
+### Acceso Directo a los Archivos del Proyecto
+* **Lógica principal y clases:** [`personajes.py`](./personajes.py)
+* **Ejecución y suite de pruebas:** [`main.py`](./main.py)
+
 
 ## 2. Estructura del Repositorio
 
@@ -93,7 +109,7 @@ Se verificaron los 12 casos obligatorios exigidos:
 # RETOS PARA LA CALIFICACIÓN MÁXIMA (5.0)
 
 
-## 🌟 Reto Extra 1 — Diagrama de Clases UML
+## Reto Extra 1 — Diagrama de Clases UML
 
 ```mermaid
 classDiagram
@@ -152,7 +168,7 @@ classDiagram
 - **Asociación (`..>`):** Representa la interacción cuando un personaje ataca e invoca métodos en el otro.
 
 
-## 🌟 Reto Extra 2 — Pruebas Automatizadas con Pytest
+## Reto Extra 2 — Pruebas Automatizadas con Pytest
 
 Para automatizar la verificación de las reglas del sistema, se integraron pruebas con `pytest` en `main.py` que evalúan:
 - Creación válida de personajes e imposibilidad de instanciar la clase abstracta.
@@ -186,7 +202,7 @@ main.py::test_combate_resultado_ganador PASSED                           [100%]
 ```
 
 
-## 🌟 Reto Extra 3 — Desafío de Abstracción
+## Reto Extra 3 — Desafío de Abstracción
 
 ### ¿Por qué `atacar()` debe ser abstracto, pero `recibir_danio()` puede estar implementado en la clase base?
 
