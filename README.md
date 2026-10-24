@@ -1,7 +1,7 @@
 # Guardians of the Ancient Kingdom
 
 **Proyecto Integrador — Parcial II (Programación Orientada a Objetos)**  
-**Estudiante:** [Tu Nombre Completo]  
+**Estudiante:** Sebastian De Luque Garcia  
 **Asignatura:** Programación Orientada a Objetos con Python  
 
 
