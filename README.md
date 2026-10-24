@@ -195,7 +195,8 @@ main.py::test_combate_resultado_ganador PASSED                           [100%]
 
 
 
-![Resultado de pytest](Pruebas/Screenshot_20261024-165251_Brave (1).png)
+![Resultado de Pytest](Pruebas/Screenshot_20261024-165251_Brave (1).png)
+
 
 
 ## Reto Extra 3 — Desafío de Abstracción
