@@ -194,6 +194,10 @@ main.py::test_combate_resultado_ganador PASSED                           [100%]
 ```
 
 
+
+![Resultado de pytest](Pruebas/Screenshot_20261024-165251_Brave (1).png)
+
+
 ## Reto Extra 3 — Desafío de Abstracción
 
 ### ¿Por qué `atacar()` debe ser abstracto, pero `recibir_danio()` puede estar implementado en la clase base?
