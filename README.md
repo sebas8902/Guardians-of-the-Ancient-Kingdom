@@ -93,7 +93,9 @@ Se verificaron los 12 casos obligatorios exigidos:
 * **12.** Finalización por empate técnico cuando ningún personaje causa daño.
 
 
----
+
+
+
 
 
 # RETOS PARA LA CALIFICACIÓN MÁXIMA (5.0)
