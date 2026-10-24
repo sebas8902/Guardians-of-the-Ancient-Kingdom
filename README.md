@@ -198,10 +198,10 @@ main.py::test_combate_resultado_ganador PASSED                           [100%]
 
 ### ¿Por qué `atacar()` debe ser abstracto, pero `recibir_danio()` puede estar implementado en la clase base?
 
-La razón fundamental de esta decisión de diseño responde a la **variabilidad del comportamiento versus la reutilización de código**:
+La razón fundamental de esta decisión de diseño responde a la variabilidad del comportamiento versus la reutilización de código:
 
 1. **Variabilidad y Polimorfismo (`atacar()`):**  
-   Cada orden de guardianes ejecuta su ataque de forma distinta según sus reglas únicas: el Guerrero potencia su golpe un 20%, el Mago ignora la defensa del rival, y el Arquero aplica un multiplicador crítico si supera la defensa. Como la clase base `Personaje` **no puede predeterminar la fórmula de ataque de subclases actuales o futuras**, declara `atacar()` como un método abstracto (`@abstractmethod`). Esto establece un contrato obligatorio para que cada subclase implemente su variante polimórfica específica.
+   Cada orden de guardianes ejecuta su ataque de forma distinta según sus reglas únicas: el Guerrero potencia su golpe un 20%, el Mago ignora la defensa del rival, y el Arquero aplica un multiplicador crítico si supera la defensa. Como la clase base `Personaje` no puede predeterminar la fórmula de ataque de subclases actuales o futuras, declara `atacar()` como un método abstracto (`@abstractmethod`). Esto establece un contrato obligatorio para que cada subclase implemente su variante polimórfica específica.
 
 2. **Reutilización y Consistencia (`recibir_danio()`):**  
    Por el contrario, la mecánica de recibir daño es **idéntica y consistente para todos los personajes**: tomar la cantidad de daño calculada, descontarla de la vida actual y garantizar que el valor nunca descienda de 0. Dado que este comportamiento no cambia según el tipo de personaje, implementar `recibir_danio()` directamente en la clase base `Personaje` permite reutilizar la lógica (principio DRY - *Don't Repeat Yourself*) y centraliza el control del encapsulamiento de la salud en un solo punto.
