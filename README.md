@@ -11,19 +11,9 @@
 
 El proyecto resuelve la necesidad de automatizar los combates, controlando de forma segura las reglas de ataque de cada personaje, el cálculo de daño según su habilidad especial, las validaciones de vida y el flujo de turnos hasta determinar un vencedor o un empate.
 
-## Esquema del proyecto
 
-A continuación se muestra el esquema completo de archivos y directorios que componen el proyecto:
 
-```text
-Guardians-of-the-Ancient-Kingdom/
-│
-├── personajes.py        # Módulo con la clase abstracta Personaje, subclases y lógica de Combate
-├── main.py              # Script principal con pruebas manuales, simulación y suite Pytest
-└── README.md            # Documentación general y respuestas teóricas
-```
-
-### Acceso Directo a los Archivos del Proyecto
+## Acceso Directo a los Archivos del Proyecto
 * **Lógica principal y clases:** [`personajes.py`](./personajes.py)
 * **Ejecución y suite de pruebas:** [`main.py`](./main.py)
 
@@ -69,7 +59,7 @@ Guardians-of-the-Ancient-Kingdom/
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone <URL_DE_TU_REPOSITORIO>
+   git clone https://github.com/sebas8902/Guardians-of-the-Ancient-Kingdom
    cd Guardians-of-the-Ancient-Kingdom
    ```
 
