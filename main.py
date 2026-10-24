@@ -2,9 +2,8 @@ from personajes import Guerrero, Mago, Arquero, Combate
 import pytest
 
 
-# ==========================================
-# PRUEBAS AUTOMATIZADAS (RETO 2 - PYTEST)
-# ==========================================
+# PRUEBAS RETO 2 - PYTEST
+
 
 def test_creacion_personaje_valido():
     guerrero = Guerrero("Arthas", 100, 30, 20)
@@ -69,10 +68,6 @@ def test_combate_resultado_ganador():
     combate.iniciar()
     assert combate.ganador == gandalf
 
-
-# ==========================================
-# EJECUCIÓN MANUAL Y SIMULACIONES
-# ==========================================
 
 def ejecutar_casos_de_prueba():
     print("Verificación de validaciones y casos de prueba:\n")
